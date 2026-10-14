@@ -1550,3 +1550,26 @@ a.project-card:focus-visible {
     grid-template-columns: 1fr;
   }
 }
+
+
+.call-now-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 13px 20px;
+  border: 1px solid #25d366;
+  border-radius: 50px;
+  background: transparent;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.call-now-button:hover {
+  background: #25d366;
+  color: #071b10;
+  transform: translateY(-2px);
+}

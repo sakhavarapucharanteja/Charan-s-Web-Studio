@@ -38,6 +38,12 @@ function App() {
             Let's Talk <span>↗</span>
           </a>
 
+          <a href="tel:+918497920031" className="call-now-button">
+            <span>📞</span> Call Now
+          </a>
+
+
+
       </header>
 
       {/* Hero Section */}
@@ -73,8 +79,8 @@ function App() {
                 Contact Us on WhatsApp <span>↗</span>
               </a>
 
-              <a href="#portfolio" className="secondary-btn">
-                Explore Our Work <span>↓</span>
+              <a href="tel:+918497920031" className="call-now-button">
+                <span>📞</span> Call Now
               </a>
             </div>
 
