@@ -2244,3 +2244,79 @@ a.project-card:focus-visible {
 }
 
 
+
+
+/* MOBILE NAVBAR FIX */
+@media (max-width: 700px) {
+  .navbar {
+    width: calc(100% - 32px);
+    min-height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px 10px;
+    padding: 16px 0 0;
+  }
+
+  /* Keep logo and CTA aligned */
+  .navbar > .logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    max-width: calc(100% - 125px);
+    min-width: 0;
+    font-size: clamp(14px, 4vw, 19px);
+    letter-spacing: -0.5px;
+    white-space: normal;
+  }
+
+  .navbar .navbar-logo-icon {
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+  }
+
+  .navbar .navbar-logo-text {
+    display: inline;
+    line-height: 1.25;
+  }
+
+  .navbar .nav-cta {
+    flex-shrink: 0;
+    padding: 10px 12px;
+    font-size: 12px;
+    gap: 6px;
+  }
+
+  /* Keep links in one scrollable row */
+  .navbar .nav-links {
+    order: 3;
+    display: flex;
+    flex: 0 0 100%;
+    width: 100%;
+    min-width: 0;
+    justify-content: flex-start;
+    gap: 22px;
+    padding: 4px 0 15px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .navbar .nav-links::-webkit-scrollbar {
+    display: none;
+  }
+
+  .navbar .nav-links a {
+    flex: 0 0 auto;
+    font-size: 13px;
+  }
+
+  /* Avoid a third row in the header */
+  .navbar .call-now-button {
+    display: none;
+  }
+}
