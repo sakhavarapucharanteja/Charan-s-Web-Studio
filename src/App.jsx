@@ -153,6 +153,74 @@ function App() {
           </div>
         </section>
 
+
+        
+        
+      
+      {/* ANIMATED BACKGROUND SHOWCASE */}
+      <section className="animated-hero-section" id="video-showcase">
+        <div className="animated-bg-scene" aria-hidden="true">
+          <div className="animated-bg-grid"></div>
+          <div className="animated-bg-orb animated-bg-orb-one"></div>
+          <div className="animated-bg-orb animated-bg-orb-two"></div>
+          <div className="animated-bg-orb animated-bg-orb-three"></div>
+          <div className="animated-bg-beam animated-bg-beam-one"></div>
+          <div className="animated-bg-beam animated-bg-beam-two"></div>
+
+          <div className="animated-bg-particle particle-one"></div>
+          <div className="animated-bg-particle particle-two"></div>
+          <div className="animated-bg-particle particle-three"></div>
+          <div className="animated-bg-particle particle-four"></div>
+          <div className="animated-bg-particle particle-five"></div>
+          <div className="animated-bg-particle particle-six"></div>
+        </div>
+
+        <div className="animated-hero-content">
+          <span className="animated-hero-label">
+            <span className="animated-hero-dot"></span>
+            DESIGN. DEVELOP. LAUNCH.
+          </span>
+
+          <h2>
+            Your business deserves
+            <br />
+            <span>a powerful online presence.</span>
+          </h2>
+
+          <p>
+            Modern websites designed to make your business stand out,
+            attract customers, and grow online.
+          </p>
+
+          <div className="animated-hero-actions">
+            <a
+              href={WHATSAPP_LINK}
+              className="animated-hero-button"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Let's Build Your Website <span>↗</span>
+            </a>
+
+            <a
+              href="tel:+918497920031"
+              className="animated-hero-call"
+            >
+              Call Now
+            </a>
+          </div>
+
+          <div className="animated-hero-trust">
+            <span>✓ Modern Design</span>
+            <span>✓ Mobile Friendly</span>
+            <span>✓ Direct Developer Support</span>
+          </div>
+        </div>
+      </section>
+
+
+
+
         {/* Services Preview */}
         <section className="services-section" id="services">
           <div className="section-heading">
@@ -690,14 +758,69 @@ function App() {
         </section>
       </main>
 
-      {/* Footer */}
-      <footer className="footer">
-        <a href="#home" className="logo">
-          CHARAN<span>STUDIO</span>
-          <span className="logo-dot">.</span>
-        </a>
-        <p>Building better websites for growing businesses.</p>
-        <span>© {new Date().getFullYear()} Charan Studio.</span>
+       {/* Footer */}
+      <footer className="footer" id="footer">
+        <div className="footer-content">
+          <div className="footer-brand">
+            <a href="#home" className="logo">
+              CHARAN<span>STUDIO</span>
+              <span className="logo-dot">.</span>
+            </a>
+
+            <p>
+              Building modern, professional websites that help businesses
+              grow online. Affordable solutions, personalized service, and
+              fast delivery.
+            </p>
+
+            <a
+              href="https://wa.me/918497920031?text=Hi%20Charan!%20I%20am%20interested%20in%20getting%20a%20website%20developed."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="footer-cta"
+            >
+              Let's Build Your Website ↗
+            </a>
+          </div>
+
+          <div className="footer-links">
+            <h3>Quick Links</h3>
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#contact">Contact Us</a>
+          </div>
+
+          <div className="footer-links">
+            <h3>Our Services</h3>
+            <a href="#services">Business Websites</a>
+            <a href="#services">E-commerce Websites</a>
+            <a href="#services">Website Redesign</a>
+            <a href="#services">Responsive Web Design</a>
+          </div>
+
+          <div className="footer-contact">
+            <h3>Let's Connect</h3>
+            <a href="tel:+918497920031">📞 +91 84979 20031</a>
+            <a
+              href="https://wa.me/918497920031"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              WhatsApp Enquiry ↗
+            </a>
+            <p>Available for freelance projects worldwide.</p>
+          </div>
+        </div>
+
+        <div className="footer-bottom">
+          <p>
+            © {new Date().getFullYear()} Charan's Web Studio.
+            All rights reserved.
+          </p>
+          <a href="#home">Back to top ↑</a>
+        </div>
       </footer>
 
 
