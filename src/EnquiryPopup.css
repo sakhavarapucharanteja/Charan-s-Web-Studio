@@ -1,0 +1,362 @@
+
+/* ==========================================
+   PREMIUM ENQUIRY POPUP
+   Charan's Web Studio
+========================================== */
+
+.enquiry-popup-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+  padding: 22px;
+  background: rgba(2, 6, 18, 0.8);
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
+  animation: enquiryBackdropIn 0.25s ease both;
+}
+
+.enquiry-popup {
+  position: relative;
+  width: 100%;
+  max-width: 460px;
+  max-height: calc(100dvh - 44px);
+  overflow-y: auto;
+  padding: 29px 32px 22px;
+  border: 1px solid rgba(56, 189, 248, 0.28);
+  border-radius: 22px;
+  background:
+    radial-gradient(
+      ellipse at 100% 0%,
+      rgba(14, 165, 233, 0.17),
+      transparent 43%
+    ),
+    linear-gradient(145deg, #101b30 0%, #080f1d 75%);
+  color: #f8fafc;
+  text-align: center;
+  box-shadow:
+    0 35px 100px rgba(0, 0, 0, 0.55),
+    0 0 45px rgba(14, 165, 233, 0.07);
+  animation: enquiryPopupIn 0.4s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+  scrollbar-width: thin;
+  scrollbar-color: #334155 transparent;
+}
+
+.enquiry-popup-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: grid;
+  width: 35px;
+  height: 35px;
+  place-items: center;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.045);
+  color: #cbd5e1;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.enquiry-popup-close:hover {
+  transform: rotate(90deg);
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+}
+
+/* Brand identity */
+
+.enquiry-popup-topline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 25px;
+  color: #cbd5e1;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.enquiry-popup-brand-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #38bdf8;
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.7);
+}
+
+/* Icon */
+
+.enquiry-popup-icon {
+  display: grid;
+  width: 61px;
+  height: 61px;
+  margin: 0 auto 19px;
+  place-items: center;
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  border-radius: 18px;
+  background: linear-gradient(
+    145deg,
+    rgba(56, 189, 248, 0.17),
+    rgba(56, 189, 248, 0.045)
+  );
+  color: #38bdf8;
+  box-shadow: 0 8px 35px rgba(56, 189, 248, 0.07);
+}
+
+/* Headline */
+
+.enquiry-popup-label {
+  color: #7dd3fc;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.8px;
+}
+
+.enquiry-popup h2 {
+  max-width: 370px;
+  margin: 15px auto 12px;
+  color: #f8fafc;
+  font-size: clamp(25px, 4vw, 32px);
+  font-weight: 750;
+  line-height: 1.23;
+  letter-spacing: -0.9px;
+}
+
+.enquiry-popup h2 span {
+  color: #38bdf8;
+}
+
+.enquiry-popup-description {
+  max-width: 355px;
+  margin: 0 auto;
+  color: #aab8cc;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+/* Benefits */
+
+.enquiry-popup-benefits {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 19px;
+  margin: 20px 0 22px;
+}
+
+.enquiry-popup-benefits span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #cbd5e1;
+  font-size: 11px;
+}
+
+.enquiry-popup-benefits svg {
+  color: #38bdf8;
+}
+
+/* Contact buttons */
+
+.enquiry-popup-actions {
+  display: grid;
+  gap: 11px;
+}
+
+.enquiry-popup-whatsapp,
+.enquiry-popup-call {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  width: 100%;
+  min-height: 53px;
+  padding: 12px 15px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 750;
+  text-decoration: none;
+  transition:
+    transform 0.22s ease,
+    box-shadow 0.22s ease,
+    background 0.22s ease;
+}
+
+.enquiry-popup-whatsapp {
+  background: #25d366;
+  color: #062b19;
+}
+
+.enquiry-popup-whatsapp:hover {
+  transform: translateY(-2px);
+  background: #45e582;
+  box-shadow: 0 9px 25px rgba(37, 211, 102, 0.19);
+}
+
+.enquiry-popup-call {
+  border-color: rgba(56, 189, 248, 0.35);
+  background: rgba(56, 189, 248, 0.07);
+  color: #eaf6ff;
+}
+
+.enquiry-popup-call:hover {
+  transform: translateY(-2px);
+  background: rgba(56, 189, 248, 0.14);
+  box-shadow: 0 8px 24px rgba(56, 189, 248, 0.08);
+}
+
+.enquiry-popup-phone-number {
+  margin-left: auto;
+  color: #aab8cc;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+/* Dismiss button */
+
+.enquiry-popup-later {
+  margin-top: 12px;
+  padding: 9px 15px;
+  border: none;
+  background: transparent;
+  color: #94a3b8;
+  font-size: 12px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.enquiry-popup-later:hover {
+  color: #ffffff;
+}
+
+/* Footer */
+
+.enquiry-popup-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 13px;
+  padding-top: 15px;
+  border-top: 1px solid rgba(148, 163, 184, 0.13);
+  color: #94a3b8;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.enquiry-popup-status {
+  width: 7px;
+  height: 7px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #4ade80;
+  box-shadow: 0 0 10px rgba(74, 222, 128, 0.3);
+}
+
+/* Animations */
+
+@keyframes enquiryBackdropIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes enquiryPopupIn {
+  from {
+    opacity: 0;
+    transform: translateY(16px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Mobile layout */
+
+@media (max-width: 480px) {
+  .enquiry-popup-backdrop {
+    padding: 14px;
+  }
+
+  .enquiry-popup {
+    max-height: calc(100dvh - 28px);
+    padding: 27px 21px 19px;
+    border-radius: 18px;
+  }
+
+  .enquiry-popup-topline {
+    margin-bottom: 21px;
+    font-size: 8px;
+    letter-spacing: 1.6px;
+  }
+
+  .enquiry-popup-icon {
+    width: 54px;
+    height: 54px;
+    margin-bottom: 17px;
+  }
+
+  .enquiry-popup h2 {
+    font-size: clamp(25px, 7vw, 30px);
+  }
+
+  .enquiry-popup-description {
+    font-size: 12px;
+  }
+
+  .enquiry-popup-benefits {
+    gap: 9px 13px;
+    margin: 17px 0 19px;
+  }
+
+  .enquiry-popup-benefits span {
+    font-size: 10px;
+  }
+
+  .enquiry-popup-whatsapp,
+  .enquiry-popup-call {
+    min-height: 50px;
+    padding: 11px 12px;
+    font-size: 12px;
+  }
+
+  .enquiry-popup-phone-number {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 350px) {
+  .enquiry-popup {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .enquiry-popup-phone-number {
+    display: none;
+  }
+}
+
+/* Accessibility */
+
+@media (prefers-reduced-motion: reduce) {
+  .enquiry-popup-backdrop,
+  .enquiry-popup {
+    animation: none;
+  }
+
+  .enquiry-popup-close,
+  .enquiry-popup-whatsapp,
+  .enquiry-popup-call,
+  .enquiry-popup-later {
+    transition: none;
+  }
+}

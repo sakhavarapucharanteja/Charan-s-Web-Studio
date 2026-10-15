@@ -1,4 +1,5 @@
 import "./App.css";
+import EnquiryPopup from "./EnquiryPopup";
 
 const WHATSAPP_NUMBER = "918497920031";
 
@@ -843,6 +844,7 @@ function App() {
         <span className="whatsapp-symbol">◉</span>
         <span>Chat with us</span>
       </a>
+      <EnquiryPopup />
     </div>
   );
 }
