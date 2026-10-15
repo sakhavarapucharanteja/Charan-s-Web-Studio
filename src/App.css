@@ -2173,4 +2173,74 @@ a.project-card:focus-visible {
 
 
 
+/* Navbar logo icon */
+.navbar-logo-icon {
+  display: block;
+  width: 46px;
+  height: 46px;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+/* Keep icon and brand text aligned */
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+/* Brand text */
+.navbar-logo-text {
+  display: inline-flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  color: #ffffff;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+/* WEB STUDIO accent */
+.navbar-logo-text > span:first-child {
+  margin-left: 5px;
+  color: #38bdf8;
+}
+
+/* Existing dot accent */
+.navbar-logo-text .logo-dot {
+  color: #38bdf8;
+}
+
+/* Mobile navbar sizing */
+@media (max-width: 600px) {
+  .navbar-logo-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .logo {
+    gap: 7px;
+  }
+}
+
+
+/* Final navbar logo refinements */
+.navbar-logo-icon {
+  width: 52px;
+  height: 52px;
+}
+
+.logo {
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+/* Keep the brand readable on smaller screens */
+@media (max-width: 600px) {
+  .navbar-logo-icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
 

@@ -14,10 +14,19 @@ function App() {
     <div className="website">
       {/* Navigation */}
       <header className="navbar">
+        
         <a href="#home" className="logo">
-          CHARAN'S <span>WEB STUDIO</span>
-          <span className="logo-dot">.</span>
+          <img
+            src="/logo.png"
+            alt="Charan's Web Studio logo"
+            className="navbar-logo-icon"
+          />
+          <span className="navbar-logo-text">
+            CHARAN'S <span>WEB STUDIO</span>
+            <span className="logo-dot">.</span>
+          </span>
         </a>
+
 
         <nav className="nav-links">
           <a href="#home">Home</a>
