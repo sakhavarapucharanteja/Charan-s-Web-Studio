@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./App.css";
 import EnquiryPopup from "./EnquiryPopup";
 
@@ -11,6 +12,7 @@ const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponen
 )}`;
 
 function App() {
+  const [legalModal, setLegalModal] = useState(null);
   return (
     <div className="website">
       {/* Navigation */}
@@ -769,11 +771,12 @@ function App() {
       </main>
 
        {/* Footer */}
+      {/* Footer */}
       <footer className="footer" id="footer">
         <div className="footer-content">
           <div className="footer-brand">
             <a href="#home" className="logo">
-              CHARAN<span>STUDIO</span>
+              CHARAN'S <span>WEB STUDIO</span>
               <span className="logo-dot">.</span>
             </a>
 
@@ -829,9 +832,185 @@ function App() {
             © {new Date().getFullYear()} Charan's Web Studio.
             All rights reserved.
           </p>
+
+          <div className="footer-legal-links">
+            <button
+              type="button"
+              className="footer-legal-btn"
+              onClick={() => setLegalModal("privacy")}
+            >
+              Privacy Policy
+            </button>
+            <span className="footer-dot">•</span>
+            <button
+              type="button"
+              className="footer-legal-btn"
+              onClick={() => setLegalModal("terms")}
+            >
+              Terms of Service
+            </button>
+          </div>
+
           <a href="#home">Back to top ↑</a>
         </div>
       </footer>
+
+
+      
+      {/* Privacy Policy and Terms of Service Modal */}
+      {legalModal && (
+        <div
+          className="legal-modal-overlay"
+          onClick={() => setLegalModal(null)}
+        >
+          <div
+            className="legal-modal"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="legal-modal-title"
+            onClick={(event) => event.stopPropagation()}
+          >
+            <button
+              type="button"
+              className="legal-modal-close"
+              onClick={() => setLegalModal(null)}
+              aria-label="Close dialog"
+            >
+              &times;
+            </button>
+
+            <h2 id="legal-modal-title">
+              {legalModal === "privacy"
+                ? "Privacy Policy"
+                : "Terms of Service"}
+            </h2>
+
+            {legalModal === "privacy" ? (
+              <div className="legal-modal-content">
+                <p>
+                  <strong>Last updated:</strong> October 19, 2026
+                </p>
+
+                <h3>1. Information We Collect</h3>
+                <p>
+                  When you contact Charan's Web Studio, you may provide your
+                  name, phone number, business information, budget, and
+                  website requirements.
+                </p>
+
+                <h3>2. How We Use Your Information</h3>
+                <p>
+                  We use the information you provide to respond to enquiries,
+                  discuss website development services, prepare proposals,
+                  and communicate with you about your project.
+                </p>
+
+                <h3>3. Sharing of Information</h3>
+                <p>
+                  We do not intend to sell your personal information.
+                  Information may be processed by service providers used
+                  to operate our website and communication services.
+                </p>
+
+                <h3>4. Data Security</h3>
+                <p>
+                  Reasonable measures are taken to protect information.
+                  However, no method of electronic transmission or storage
+                  is completely secure.
+                </p>
+
+                <h3>5. Your Choices</h3>
+                <p>
+                  You may contact us to request access to or correction
+                  of information you have provided, subject to applicable
+                  legal requirements.
+                </p>
+
+                <h3>6. Contact</h3>
+                <p>
+                  For privacy questions, contact us at{" "}
+                  <a href="https://wa.me/918497920031" target="_blank"
+                    rel="noopener noreferrer">
+                    WhatsApp
+                  </a>.
+                </p>
+              </div>
+            ) : (
+              <div className="legal-modal-content">
+                <p>
+                  <strong>Last updated:</strong> October 19, 2026
+                </p>
+
+                <h3>1. Services</h3>
+                <p>
+                  Charan's Web Studio provides website design and development
+                  services according to the requirements agreed upon with
+                  each customer.
+                </p>
+
+                <h3>2. Pricing and Payment</h3>
+                <p>
+                  Prices displayed on the website are starting prices.
+                  Final costs depend on the project scope, features, and
+                  any additional services agreed upon before development.
+                </p>
+
+                <h3>3. Project Delivery</h3>
+                <p>
+                  Delivery timelines depend on the agreed scope, availability
+                  of content, customer feedback, and other project requirements.
+                </p>
+
+                <h3>4. Lifetime Support</h3>
+                <p>
+                  Lifetime support covers minor updates to the original
+                  website, as described on our website. New features,
+                  major redesigns, third-party charges, domain renewals,
+                  and hosting fees are separate unless otherwise agreed.
+                </p>
+
+                <h3>5. Customer Responsibilities</h3>
+                <p>
+                  Customers are responsible for providing accurate content
+                  and ensuring they have the necessary rights to use the
+                  text, images, logos, and other materials supplied.
+                </p>
+
+                <h3>6. Third-Party Services</h3>
+                <p>
+                  Domain registrars, hosting providers, payment services,
+                  and other third-party tools may have separate fees and
+                  terms.
+                </p>
+
+                <h3>7. Changes to These Terms</h3>
+                <p>
+                  These terms may be updated when our services or business
+                  practices change. Applicable law continues to apply.
+                </p>
+
+                <h3>8. Contact</h3>
+                <p>
+                  For questions about these terms, contact us through{" "}
+                  <a href="https://wa.me/918497920031" target="_blank"
+                    rel="noopener noreferrer">
+                    WhatsApp
+                  </a>.
+                </p>
+              </div>
+            )}
+
+            <button
+              type="button"
+              className="legal-modal-done"
+              onClick={() => setLegalModal(null)}
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
+
 
 
       <a

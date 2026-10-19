@@ -2320,3 +2320,141 @@ a.project-card:focus-visible {
     display: none;
   }
 }
+
+
+
+.legal-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(10, 18, 30, 0.72);
+  backdrop-filter: blur(5px);
+}
+
+.legal-modal {
+  position: relative;
+  width: 100%;
+  max-width: 720px;
+  max-height: 85vh;
+  overflow-y: auto;
+  padding: 36px;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  background: #ffffff;
+  color: #1f2937;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.25);
+}
+
+.legal-modal h2 {
+  margin: 0 40px 24px 0;
+  color: #163f35;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.legal-modal-content h3 {
+  margin: 24px 0 8px;
+  color: #163f35;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.legal-modal-content p {
+  margin-bottom: 14px;
+  line-height: 1.8;
+  color: #4b5563;
+}
+
+.legal-modal-content a {
+  color: #16845b;
+  text-decoration: underline;
+}
+
+.legal-modal-close {
+  position: absolute;
+  top: 14px;
+  right: 18px;
+  width: 38px;
+  height: 38px;
+  border: none;
+  border-radius: 50%;
+  background: #f3f4f6;
+  color: #374151;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.legal-modal-close:hover {
+  background: #e5e7eb;
+}
+
+.legal-modal-done {
+  margin-top: 20px;
+  padding: 12px 26px;
+  border: none;
+  border-radius: 9px;
+  background: #246b55;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.legal-modal-done:hover {
+  background: #195340;
+}
+
+@media (max-width: 600px) {
+  .legal-modal {
+    padding: 26px 20px;
+    max-height: 88vh;
+  }
+
+  .legal-modal h2 {
+    font-size: 24px;
+  }
+}
+
+
+
+/* Footer Privacy Policy and Terms of Service buttons */
+.footer-legal-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footer-legal-btn {
+  appearance: none;
+  -webkit-appearance: none;
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  color: #8faac8;
+  font: inherit;
+  font-size: 15px;
+  line-height: inherit;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-legal-btn:hover {
+  color: #38bdf8;
+  text-decoration: underline;
+}
+
+.footer-legal-btn:focus-visible {
+  outline: 2px solid #38bdf8;
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+
+.footer-dot {
+  color: #64748b;
+}
