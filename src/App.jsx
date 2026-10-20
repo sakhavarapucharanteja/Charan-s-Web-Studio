@@ -20,7 +20,7 @@ function App() {
         
         <a href="#home" className="logo">
           <img
-            src="/logo.png"
+            src="/logo.webp"
             alt="Charan's Web Studio logo"
             className="navbar-logo-icon"
           />
