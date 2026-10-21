@@ -13,6 +13,28 @@ const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponen
 
 function App() {
   const [legalModal, setLegalModal] = useState(null);
+
+  const [activeFaq, setActiveFaq] = useState(null);
+
+const faqs = [
+  {
+    q: "How long will it take to build my website?",
+    a: "Single-page and multi-page business websites are completed within 24 hours once you provide your text and images. E-commerce stores take just 2 to 3 days.",
+  },
+  {
+    q: "Is the BillEase billing software really free?",
+    a: "Yes! Every standard business or e-commerce website includes lifetime free access to our BillEase POS, GST, and inventory billing software at zero additional license cost.",
+  },
+  {
+    q: "Who handles the domain and hosting?",
+    a: "We assist you in selecting and buying your own domain and hosting in your name, so you retain 100% complete ownership of your site and brand.",
+  },
+  {
+    q: "What does Lifetime Support & Free Updates cover?",
+    a: "Once your project is live, you can message us directly on WhatsApp anytime for minor content changes (text updates, price edits, photo swaps) at ₹0 extra fee.",
+  },
+];
+
   return (
     <div className="website">
       {/* Navigation */}
@@ -169,64 +191,34 @@ function App() {
         
         
       
-      {/* ANIMATED BACKGROUND SHOWCASE */}
-      <section className="animated-hero-section" id="video-showcase">
-        <div className="animated-bg-scene" aria-hidden="true">
-          <div className="animated-bg-grid"></div>
-          <div className="animated-bg-orb animated-bg-orb-one"></div>
-          <div className="animated-bg-orb animated-bg-orb-two"></div>
-          <div className="animated-bg-orb animated-bg-orb-three"></div>
-          <div className="animated-bg-beam animated-bg-beam-one"></div>
-          <div className="animated-bg-beam animated-bg-beam-two"></div>
-
-          <div className="animated-bg-particle particle-one"></div>
-          <div className="animated-bg-particle particle-two"></div>
-          <div className="animated-bg-particle particle-three"></div>
-          <div className="animated-bg-particle particle-four"></div>
-          <div className="animated-bg-particle particle-five"></div>
-          <div className="animated-bg-particle particle-six"></div>
+      {/* FREQUENTLY ASKED QUESTIONS */}
+      <section className="faq-section" id="faq">
+        <div className="section-heading">
+          <span className="section-label">GOT QUESTIONS?</span>
+          <h2>
+            Frequently Asked
+            <br />
+            <span>Questions.</span>
+          </h2>
         </div>
 
-        <div className="animated-hero-content">
-          <span className="animated-hero-label">
-            <span className="animated-hero-dot"></span>
-            DESIGN. DEVELOP. LAUNCH.
-          </span>
-
-          <h2>
-            Your business deserves
-            <br />
-            <span>a powerful online presence.</span>
-          </h2>
-
-          <p>
-            Modern websites designed to make your business stand out,
-            attract customers, and grow online.
-          </p>
-
-          <div className="animated-hero-actions">
-            <a
-              href={WHATSAPP_LINK}
-              className="animated-hero-button"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Let's Build Your Website <span>↗</span>
-            </a>
-
-            <a
-              href="tel:+918497920031"
-              className="animated-hero-call"
-            >
-              Call Now
-            </a>
-          </div>
-
-          <div className="animated-hero-trust">
-            <span>✓ Modern Design</span>
-            <span>✓ Mobile Friendly</span>
-            <span>✓ Direct Developer Support</span>
-          </div>
+        <div className="faq-accordion">
+          {faqs.map((faq, index) => {
+            const isOpen = activeFaq === index;
+            return (
+              <div
+                key={index}
+                className={`faq-item ${isOpen ? "open" : ""}`}
+                onClick={() => setActiveFaq(isOpen ? null : index)}
+              >
+                <div className="faq-question">
+                  <h3>{faq.q}</h3>
+                  <span className="faq-icon">{isOpen ? "−" : "+"}</span>
+                </div>
+                {isOpen && <div className="faq-answer">{faq.a}</div>}
+              </div>
+            );
+          })}
         </div>
       </section>
 
