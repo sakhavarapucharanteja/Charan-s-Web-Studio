@@ -670,6 +670,13 @@ const faqs = [
               const budget = formData.get("budget");
               const requirements = formData.get("requirements");
 
+              // Track conversion event in Google Ads
+              if (typeof window.gtag === "function") {
+                window.gtag("event", "conversion", {
+                  send_to: "AW-18521872922/jlWTCM6YuKUdEJq09f9E",
+                });
+              }
+
               const message = [
                 "Hi Charan! I would like to enquire about website development.",
                 "",
