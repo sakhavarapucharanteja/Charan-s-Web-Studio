@@ -54,12 +54,12 @@ const faqs = [
 
 
         <nav className="nav-links">
-          <a href="#home">Home</a>
-          <a href="#services">Services</a>
-          <a href="#portfolio">Portfolio</a>
-          <a href="#pricing">Pricing</a>
-          <a href="#support">Lifetime Support</a>
-          <a href="#contact">Contact Us</a>
+          <a href="home">Home</a>
+          <a href="services">Services</a>
+          <a href="portfolio">Portfolio</a>
+          <a href="pricing">Pricing</a>
+          <a href="support">Lifetime Support</a>
+          <a href="contact">Contact Us</a>
         </nav>
 
         
