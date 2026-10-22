@@ -40,7 +40,7 @@ const faqs = [
       {/* Navigation */}
       <header className="navbar">
         
-        <a href="#home" className="logo">
+        <a href="home" className="logo">
           <img
             src="/logo.webp"
             alt="Charan's Web Studio logo"
@@ -244,7 +244,7 @@ const faqs = [
                 Professional websites that build trust and help
                 customers discover your business.
               </p>
-              <a href="#contact">Explore service ↗</a>
+              <a href="contact">Explore service ↗</a>
             </article>
 
             <article className="service-card">
@@ -254,7 +254,7 @@ const faqs = [
                 Sell products online with a modern storefront and
                 a smooth shopping experience.
               </p>
-              <a href="#contact">Explore service ↗</a>
+              <a href="contact">Explore service ↗</a>
             </article>
 
             <article className="service-card">
@@ -264,7 +264,7 @@ const faqs = [
                 Focused landing pages designed to generate enquiries
                 and support your advertising campaigns.
               </p>
-              <a href="#contact">Explore service ↗</a>
+              <a href="contact">Explore service ↗</a>
             </article>
           </div>
         </section>
@@ -767,7 +767,7 @@ const faqs = [
       <footer className="footer" id="footer">
         <div className="footer-content">
           <div className="footer-brand">
-            <a href="#home" className="logo">
+            <a href="home" className="logo">
               CHARAN'S <span>WEB STUDIO</span>
               <span className="logo-dot">.</span>
             </a>
@@ -790,19 +790,19 @@ const faqs = [
 
           <div className="footer-links">
             <h3>Quick Links</h3>
-            <a href="#home">Home</a>
-            <a href="#services">Services</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#pricing">Pricing</a>
-            <a href="#contact">Contact Us</a>
+            <a href="home">Home</a>
+            <a href="services">Services</a>
+            <a href="portfolio">Portfolio</a>
+            <a href="pricing">Pricing</a>
+            <a href="contact">Contact Us</a>
           </div>
 
           <div className="footer-links">
             <h3>Our Services</h3>
-            <a href="#services">Business Websites</a>
-            <a href="#services">E-commerce Websites</a>
-            <a href="#services">Website Redesign</a>
-            <a href="#services">Responsive Web Design</a>
+            <a href="services">Business Websites</a>
+            <a href="services">E-commerce Websites</a>
+            <a href="services">Website Redesign</a>
+            <a href="services">Responsive Web Design</a>
           </div>
 
           <div className="footer-contact">
@@ -843,7 +843,7 @@ const faqs = [
             </button>
           </div>
 
-          <a href="#home">Back to top ↑</a>
+          <a href="home">Back to top ↑</a>
         </div>
       </footer>
 
