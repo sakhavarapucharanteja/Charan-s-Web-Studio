@@ -2638,3 +2638,169 @@ a.project-card:focus-visible {
     font-size: 13.5px;
   }
 }
+
+
+
+.project-food .project-logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 300px;
+  padding: 24px;
+}
+
+.project-food .project-logo {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  max-height: 180px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.project-food:hover .project-logo {
+  transform: scale(1.04);
+}
+
+
+
+.project-medical .project-logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 300px;
+  padding: 24px;
+}
+
+.project-medical .project-logo {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  max-height: 180px;
+  height: auto;
+  object-fit: contain;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 16px;
+  transition: transform 0.3s ease;
+}
+
+.project-medical:hover .project-logo {
+  transform: scale(1.04);
+}
+
+
+
+.project-store .project-logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 300px;
+  padding: 24px;
+}
+
+.project-store .project-logo {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  max-height: 180px;
+  height: auto;
+  object-fit: contain;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 16px;
+  transition: transform 0.3s ease;
+}
+
+.project-store:hover .project-logo {
+  transform: scale(1.04);
+}
+
+
+
+.project-billing .project-logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 300px;
+  padding: 24px;
+}
+
+.project-billing .project-logo {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  max-height: 220px;
+  height: auto;
+  object-fit: contain;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 16px;
+  transition: transform 0.3s ease;
+}
+
+.project-billing:hover .project-logo {
+  transform: scale(1.04);
+}
+
+
+
+.project-resorts .project-logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 300px;
+  padding: 24px;
+}
+
+.project-resorts .project-logo {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  max-height: 180px;
+  height: auto;
+  object-fit: contain;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 16px;
+  transition: transform 0.3s ease;
+}
+
+.project-resorts:hover .project-logo {
+  transform: scale(1.04);
+}
+
+
+
+.project-realestate .project-logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 300px;
+  padding: 24px;
+}
+
+.project-realestate .project-logo {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  max-height: 180px;
+  height: auto;
+  object-fit: contain;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 16px;
+  transition: transform 0.3s ease;
+}
+
+.project-realestate:hover .project-logo {
+  transform: scale(1.04);
+}

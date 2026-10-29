@@ -490,6 +490,7 @@ const faqs = [
   </div>
 
   <div className="portfolio-grid">
+    
     {/* 1. My Home Foods */}
     <a
       href="https://myhomemadefoods.in/"
@@ -499,16 +500,16 @@ const faqs = [
       aria-label="Visit My Home Foods website"
     >
       <div className="project-preview project-food">
-        <span className="project-number">01 / BUSINESS WEBSITE</span>
+        <span className="project-number">
+          01 / BUSINESS WEBSITE
+        </span>
 
-        <div className="project-mockup">
-          <span className="mockup-label">HOMEMADE WITH LOVE</span>
-          <h3>
-            Good food.
-            <br />
-            Made at home.
-          </h3>
-          <span className="mockup-button">VISIT WEBSITE ↗</span>
+        <div className="project-logo-container">
+          <img
+            src="/logos/my-home-foods.png"
+            alt="M & Y Home Made Foods logo"
+            className="project-logo"
+          />
         </div>
       </div>
 
@@ -521,6 +522,8 @@ const faqs = [
       </div>
     </a>
 
+
+    
     {/* 2. Medical Equipment */}
     <a
       href="https://instamedcare.in/"
@@ -532,14 +535,12 @@ const faqs = [
       <div className="project-preview project-medical">
         <span className="project-number">02 / HEALTHCARE</span>
 
-        <div className="project-mockup">
-          <span className="mockup-label">CARE THAT MATTERS</span>
-          <h3>
-            Better care.
-            <br />
-            Closer to home.
-          </h3>
-          <span className="mockup-button">VISIT WEBSITE ↗</span>
+        <div className="project-logo-container">
+          <img
+            src="/logos/instamedcare.png"
+            alt="InstaMedCare logo"
+            className="project-logo"
+          />
         </div>
       </div>
 
@@ -552,38 +553,40 @@ const faqs = [
       </div>
     </a>
 
-    {/* 3. Lumora E-commerce */}
-    <a
-      href="https://sakhavarapucharanteja.github.io/LUMORA-Ecommerce/"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="project-card"
-      aria-label="Visit Lumora e-commerce store"
-    >
-      <div className="project-preview project-store">
-        <span className="project-number">03 / E-COMMERCE</span>
-
-        <div className="project-mockup">
-          <span className="mockup-label">STYLE YOUR MOMENT</span>
-          <h3>
-            Every detail
-            <br />
-            makes a difference.
-          </h3>
-          <span className="mockup-button">EXPLORE STORE ↗</span>
-        </div>
-      </div>
-
-      <div className="project-info">
-        <div>
-          <h3>Lumora</h3>
-          <p>Fashion accessories e-commerce store</p>
-        </div>
-        <span className="project-arrow">↗</span>
-      </div>
-    </a>
 
     
+      {/* 3. Lumora E-commerce */}
+      <a
+        href="https://sakhavarapucharanteja.github.io/LUMORA-Ecommerce/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="project-card"
+        aria-label="Visit Lumora e-commerce store"
+      >
+        <div className="project-preview project-store">
+          <span className="project-number">03 / E-COMMERCE</span>
+
+          <div className="project-logo-container">
+            <img
+              src="/logos/lumora.png"
+              alt="Lumora logo"
+              className="project-logo"
+            />
+          </div>
+        </div>
+
+        <div className="project-info">
+          <div>
+            <h3>Lumora</h3>
+            <p>Fashion accessories e-commerce store</p>
+          </div>
+          <span className="project-arrow">↗</span>
+        </div>
+      </a>
+
+
+    
+      
       {/* 4. BillEase Billing Application */}
       <a
         href="https://billeasein.netlify.app/"
@@ -595,14 +598,12 @@ const faqs = [
         <div className="project-preview project-billing">
           <span className="project-number">04 / BILLING SOFTWARE</span>
 
-          <div className="project-mockup">
-            <span className="mockup-label">SMARTER BILLING</span>
-            <h3>
-              Billing made
-              <br />
-              simple.
-            </h3>
-            <span className="mockup-button">EXPLORE BILLEASE ↗</span>
+          <div className="project-logo-container">
+            <img
+              src="/logos/billease.png"
+              alt="BillEase billing software logo"
+              className="project-logo"
+            />
           </div>
         </div>
 
@@ -616,38 +617,42 @@ const faqs = [
       </a>
 
 
-    {/* 5. Resorts and Farms */}
-    <a
-      href="https://ramisettysireesha48-ship-it.github.io/Resorts-and-Farms/"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="project-card"
-      aria-label="Visit Resorts and Farms website"
-    >
-      <div className="project-preview project-resorts">
-        <span className="project-number">05 / RESORTS &amp; FARMS</span>
 
-        <div className="project-mockup">
-          <span className="mockup-label">YOUR PERFECT GETAWAY</span>
-          <h3>
-            Escape the ordinary.
-            <br />
-            Experience nature.
-          </h3>
-          <span className="mockup-button">VISIT WEBSITE ↗</span>
+    
+      {/* 5. Resorts and Farms */}
+      <a
+        href="https://ramisettysireesha48-ship-it.github.io/Resorts-and-Farms/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="project-card"
+        aria-label="Visit Resorts and Farms website"
+      >
+        <div className="project-preview project-resorts">
+          <span className="project-number">
+            05 / RESORTS &amp; FARMS
+          </span>
+
+          <div className="project-logo-container">
+            <img
+              src="/logos/bhargav.png"
+              alt="Bhargav Farms and Resorts logo"
+              className="project-logo"
+            />
+          </div>
         </div>
-      </div>
 
-      <div className="project-info">
-        <div>
-          <h3>Resorts &amp; Farms</h3>
-          <p>Resort and farm website</p>
+        <div className="project-info">
+          <div>
+            <h3>Resorts &amp; Farms</h3>
+            <p>Resort and farm website</p>
+          </div>
+          <span className="project-arrow">↗</span>
         </div>
-        <span className="project-arrow">↗</span>
-      </div>
-    </a>
+      </a>
 
-    {/* 6. Kottikurra Real Estate Website */}
+
+    
+      {/* 6. Kottikurra Real Estate Website */}
       <a
         href="https://kotikurra.in/"
         target="_blank"
@@ -656,18 +661,14 @@ const faqs = [
         aria-label="Open Kottikurra Real Estate website"
       >
         <div className="project-preview project-realestate">
-          <span className="project-number">05 / REAL ESTATE</span>
+          <span className="project-number">06 / REAL ESTATE</span>
 
-          <div className="project-mockup">
-            <span className="mockup-label">LUXURY REAL ESTATE</span>
-            <h3>
-              Find your
-              <br />
-              dream property.
-            </h3>
-            <span className="mockup-button">
-              EXPLORE KOTTIKURRA ↗
-            </span>
+          <div className="project-logo-container">
+            <img
+              src="/logos/kotikurra.png"
+              alt="Kotikurra Real Estate logo"
+              className="project-logo"
+            />
           </div>
         </div>
 
@@ -679,8 +680,9 @@ const faqs = [
           <span className="project-arrow">↗</span>
         </div>
       </a>
-  </div>
-</section>
+
+      </div>
+    </section>
 
 
 
