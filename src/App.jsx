@@ -103,15 +103,24 @@ const faqs = [
               support from start to finish.
             </p>
 
+            
             <div className="hero-buttons">
               <a
                 href={WHATSAPP_LINK}
                 className="primary-btn"
                 target="_blank"
                 rel="noreferrer"
+                onClick={() => {
+                  if (typeof window.gtag === "function") {
+                    window.gtag("event", "conversion", {
+                      send_to: "AW-18521872922/jlWTCM6YuKUdEJq09f9E",
+                    });
+                  }
+                }}
               >
                 Contact Us on WhatsApp <span>↗</span>
               </a>
+
 
               <a href="tel:+918497920031" className="call-now-button">
                 <span>📞</span> Call Now
@@ -637,6 +646,39 @@ const faqs = [
         <span className="project-arrow">↗</span>
       </div>
     </a>
+
+    {/* 6. Kottikurra Real Estate Website */}
+      <a
+        href="https://kotikurra.in/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="project-card"
+        aria-label="Open Kottikurra Real Estate website"
+      >
+        <div className="project-preview project-realestate">
+          <span className="project-number">05 / REAL ESTATE</span>
+
+          <div className="project-mockup">
+            <span className="mockup-label">LUXURY REAL ESTATE</span>
+            <h3>
+              Find your
+              <br />
+              dream property.
+            </h3>
+            <span className="mockup-button">
+              EXPLORE KOTTIKURRA ↗
+            </span>
+          </div>
+        </div>
+
+        <div className="project-info">
+          <div>
+            <h3>Kottikurra Real Estate</h3>
+            <p>Luxury properties &amp; real estate website</p>
+          </div>
+          <span className="project-arrow">↗</span>
+        </div>
+      </a>
   </div>
 </section>
 
